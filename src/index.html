@@ -3,10 +3,1607 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment 3 - Landing Page</title>
+    <title>Company Profile — IT Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body>
-    <!-- Mulai coding di sini -->
+  <body class="bg-page text-text overflow-x-hidden">
+    <!-- Header -->
+    <header
+      class="fixed inset-x-0 top-0 z-50 flex h-21 items-center justify-between border-b border-border/60 bg-black/40 px-6 backdrop-blur-10"
+    >
+      <div
+        class="mx-auto flex max-w-[1440px] border-0 border-white justify-between items-center w-full"
+      >
+        <a href="#" class="flex items-center gap-2" aria-label="Home">
+          <span
+            class="flex h-8 w-7.5 shrink-0 items-center justify-center text-accent"
+            aria-hidden="true"
+          >
+            <img
+              src="assets/logos/logo.svg"
+              alt="company logo"
+              class="h-full w-full object-cover"
+              width="80"
+              height="80"
+            />
+          </span>
+          <span class="font-logo text-2xl font-semibold leading-9 text-white"
+            >Your Logo</span
+          >
+        </a>
+        <nav class="hidden items-center gap-3 md:flex" aria-label="Primary">
+          <a
+            class="rounded-full px-4 py-2 text-base font-semibold text-text hover:bg-white/5"
+            href="#about"
+            >About</a
+          >
+          <a
+            class="rounded-full px-4 py-2 text-base font-semibold text-text hover:bg-white/5"
+            href="#services"
+            >Service</a
+          >
+          <a
+            class="rounded-full px-4 py-2 text-base font-semibold text-text hover:bg-white/5"
+            href="#projects"
+            >Projects</a
+          >
+          <a
+            class="rounded-full px-4 py-2 text-base font-semibold text-text hover:bg-white/5"
+            href="#testimonials"
+            >Testimonials</a
+          >
+          <a
+            class="rounded-full px-4 py-2 text-base font-semibold text-text hover:bg-white/5"
+            href="#faq"
+            >FAQ</a
+          >
+        </nav>
+        <a
+          href="#contact"
+          class="hidden h-11 min-w-49.25 items-center justify-center rounded-full bg-accent px-6 text-sm font-bold text-white shadow-[inset_4px_4px_4px_rgba(255,255,255,0.25)] md:inline-flex"
+          >Let’s Talk</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section
+        class="relative min-h-[min(100vh,747px)] top-10 md:top-0 border-0 border-white"
+        aria-labelledby="hero-heading"
+      >
+        <div
+          class="mx-auto flex max-w-[1440px] flex-col lg:flex-row lg:items-start border-0 border-white"
+        >
+          <div
+            class="flex flex-col gap-8 px-6 pb-12 pt-[clamp(48px,12vw,146px)] lg:w-163.25 lg:shrink-0"
+          >
+            <div class="flex flex-col gap-2">
+              <h1
+                id="hero-heading"
+                class="text-[clamp(2rem,5vw,3.5rem)] font-bold leading-[1.2] tracking-[-0.02em] text-text"
+              >
+                Your Tech Partner for
+                <span class="text-accent">Smarter Growth</span>
+              </h1>
+              <p class="max-w-[38rem] delivered-solution-desc">
+                We deliver tailored IT solutions to help you scale with speed
+                and confidence.
+              </p>
+            </div>
+            <a
+              href="#contact"
+              class="inline-flex h-12 w-full md:w-50 items-center justify-center rounded-full bg-accent text-base font-bold leading-7.5 tracking-[-0.02em] text-white shadow-[inset_4px_4px_4px_rgba(255,255,255,0.25)]"
+              >Let’s Talk</a
+            >
+          </div>
+
+          <div
+            class="relative flex flex-1 justify-end lg:mr-[-6px] lg:mt-0 lg:min-h-[747px] lg:w-[747px]"
+          >
+            <div
+              class="relative aspect-square w-full max-w-[747px] lg:absolute lg:right-0 lg:top-0 lg:h-[747px] lg:w-[747px]"
+            >
+              <img
+                src="./assets/images/hero-main.png"
+                alt=""
+                class="h-full w-full object-cover object-center -scale-x-100"
+                width="747"
+                height="747"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trusted by -->
+      <section
+        class="border-t border-transparent bg-page py-0"
+        aria-labelledby="trusted-heading"
+      >
+        <div class="mx-auto max-w-[1440px] px-6 lg:px-0">
+          <h2
+            id="trusted-heading"
+            class="px-4 pb-2 pt-10 text-center text-2xl font-bold leading-9 text-text"
+          >
+            Trusted by Global Innovators & Leading Brands
+          </h2>
+          <div class="trusted-marquee flex h-50 items-center overflow-hidden">
+            <div
+              class="trusted-track flex shrink-0 items-center gap-12 px-8 opacity-90"
+            >
+              <img
+                src="assets/logos/zoom-logo.svg"
+                alt="Background"
+                class="partner-logo"
+              />
+              <img
+                src="assets/logos/postman-logo.svg"
+                alt="Background"
+                class="partner-logo"
+              />
+              <img
+                src="assets/logos/databricks-logo.svg"
+                alt="Background"
+                class="partner-logo"
+              />
+              <img
+                src="assets/logos/airbnb-logo.svg"
+                alt="Background"
+                class="partner-logo"
+              />
+              <img
+                src="assets/logos/dropbox-logo.svg"
+                alt="Background"
+                class="partner-logo"
+              />
+              <img
+                src="assets/logos/lobe-logo.svg"
+                alt="Background"
+                class="partner-logo"
+              />
+              <img
+                src="assets/logos/upwork-logo.svg"
+                alt="Background"
+                class="partner-logo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats -->
+      <section id="about" class="scroll-mt-24 border-t border-transparent">
+        <div
+          class="mx-auto flex max-w-[1440px] flex-col gap-16 px-6 py-20 lg:px-35"
+        >
+          <div class="flex flex-col gap-2.75 text-center">
+            <h2 class="section-header-big">
+              End-to-End IT Solutions That Drive Results
+            </h2>
+            <p class="text-lg font-medium leading-8 text-muted">
+              From strategy to execution, we deliver solutions that grow your
+              business.
+            </p>
+          </div>
+          <div class="grid md:gap-5 grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+            <article class="delivered-solution">
+              <p class="delivered-solution-value">50+</p>
+              <p class="delivered-solution-desc">Projects Delivered</p>
+            </article>
+            <article class="delivered-solution">
+              <p class="delivered-solution-value">5+</p>
+              <p class="delivered-solution-desc">Years of Experience</p>
+            </article>
+            <article class="delivered-solution">
+              <p class="delivered-solution-value">10+</p>
+              <p class="delivered-solution-desc">Industry Awards Won</p>
+            </article>
+            <article class="delivered-solution">
+              <p class="delivered-solution-value">100%</p>
+              <p class="delivered-solution-desc">Client Satisfaction Rate</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process -->
+      <section class="border-t border-divider/30">
+        <div class="mx-auto max-w-[1440px] px-6 py-20 lg:px-35">
+          <div class="mb-16 flex flex-col gap-2.75 text-center">
+            <h2 class="section-header-big">Our Process</h2>
+            <p class="text-lg font-medium leading-8 text-muted">
+              Clear steps. Smart execution. Results you can count on.
+            </p>
+          </div>
+          <div class="relative">
+            <div
+              class="pointer-events-none absolute bottom-8 left-1/2 top-8 hidden w-px -translate-x-1/2 bg-divider lg:block"
+              aria-hidden="true"
+            ></div>
+            <ol class="relative space-y-10 lg:space-y-0">
+              <!-- 1 odd: card left -->
+              <li class="li-process-content">
+                <div class="process-content-wrapper">
+                  <div class="process-content-box">
+                    <div class="flex flex-col gap-1">
+                      <h3 class="process-content-title">
+                        Design & Prototyping
+                      </h3>
+                      <p class="process-content-desc">Craft UX That Converts</p>
+                    </div>
+                    <svg
+                      class="h-6 w-6 shrink-0 text-text"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M6 15l6-6 6 6"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="process-number-wrapper">
+                  <div class="process-number">1</div>
+                </div>
+                <div
+                  class="hidden lg:order-3 lg:block"
+                  aria-hidden="true"
+                ></div>
+              </li>
+              <!-- 2 even: card right -->
+              <li class="li-process-content">
+                <div class="hidden lg:block" aria-hidden="true"></div>
+                <div class="process-number-wrapper">
+                  <div class="process-number">2</div>
+                </div>
+                <div
+                  class="order-2 flex justify-center lg:order-3 lg:justify-start"
+                >
+                  <div class="process-content-box">
+                    <div class="flex flex-col gap-1">
+                      <h3 class="process-content-title">Planning & Strategy</h3>
+                      <p class="process-content-desc">
+                        Build a Clear, Scalable Roadmap
+                      </p>
+                    </div>
+                    <svg
+                      class="h-6 w-6 shrink-0 text-text"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M6 15l6-6 6 6"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </li>
+              <!-- 3 odd -->
+              <li class="li-process-content">
+                <div class="process-content-wrapper">
+                  <div class="process-content-box">
+                    <div class="flex flex-col gap-1">
+                      <h3 class="process-content-title">
+                        Design & Prototyping
+                      </h3>
+                      <p class="process-content-desc">Craft UX That Converts</p>
+                    </div>
+                    <svg
+                      class="h-6 w-6 shrink-0 text-text"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M6 15l6-6 6 6"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="process-number-wrapper">
+                  <div class="process-number">3</div>
+                </div>
+                <div
+                  class="hidden lg:order-3 lg:block"
+                  aria-hidden="true"
+                ></div>
+              </li>
+              <!-- 4 even -->
+              <li class="li-process-content">
+                <div class="hidden lg:block" aria-hidden="true"></div>
+                <div class="process-number-wrapper">
+                  <div class="process-number">4</div>
+                </div>
+                <div
+                  class="order-2 flex justify-center lg:order-3 lg:justify-start"
+                >
+                  <div class="process-content-box">
+                    <div class="flex flex-col gap-1">
+                      <h3 class="process-content-title">
+                        Development & Implementation
+                      </h3>
+                      <p class="process-content-desc">
+                        Deliver With Speed & Precision
+                      </p>
+                    </div>
+                    <svg
+                      class="h-6 w-6 shrink-0 text-text"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M6 15l6-6 6 6"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </li>
+              <!-- 5 odd -->
+              <li class="li-process-content">
+                <div class="process-content-wrapper">
+                  <div class="process-content-box">
+                    <div class="flex flex-col gap-1">
+                      <h3 class="process-content-title">
+                        Testing & Optimization
+                      </h3>
+                      <p class="process-content-desc">
+                        Ensure Quality at Every Step
+                      </p>
+                    </div>
+                    <svg
+                      class="h-6 w-6 shrink-0 text-text"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M6 15l6-6 6 6"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="process-number-wrapper">
+                  <div class="process-number">5</div>
+                </div>
+                <div
+                  class="hidden lg:order-3 lg:block"
+                  aria-hidden="true"
+                ></div>
+              </li>
+              <!-- 6 even -->
+              <li class="li-process-content">
+                <div class="hidden lg:block" aria-hidden="true"></div>
+                <div class="process-number-wrapper">
+                  <div class="process-number">6</div>
+                </div>
+                <div
+                  class="order-2 flex justify-center lg:order-3 lg:justify-start"
+                >
+                  <div class="process-content-box">
+                    <div class="flex flex-col gap-1">
+                      <h3 class="process-content-title">Launch & Growth</h3>
+                      <p class="process-content-desc">
+                        Scale, Measure & Improve Continuously
+                      </p>
+                    </div>
+                    <svg
+                      class="h-6 w-6 shrink-0 text-text"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M6 15l6-6 6 6"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services" class="scroll-mt-24 border-t border-divider/30">
+        <div class="section-wrapper">
+          <div class="section-header">
+            <h2 class="section-header-title">
+              Smart IT Solutions That Grow With You
+            </h2>
+            <p class="text-lg font-medium leading-8 text-muted">
+              Tailored tech to boost efficiency, security, and results.
+            </p>
+          </div>
+          <div class="flex flex-col gap-10">
+            <div class="grid gap-5 md:grid-cols-3">
+              <article class="service-card">
+                <div class="service-card-image">
+                  <img
+                    src="./assets/images/icon-web.png"
+                    alt=""
+                    class="h-full w-full object-cover"
+                    width="80"
+                    height="80"
+                  />
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h3 class="process-content-title">Web Development</h3>
+                  <p class="process-content-desc">
+                    Build fast, scalable, and SEO-friendly websites.
+                  </p>
+                </div>
+              </article>
+              <article
+                class="rounded-2xl bg-[linear-gradient(-28deg,#181d27_35%,#ff6c37_100%)] p-px"
+              >
+                <div
+                  class="service-card relative rounded-[15px] bg-surface pt-14 pb-5 px-5"
+                >
+                  <div class="service-card-image">
+                    <img
+                      src="./assets/images/icon-mobile.png"
+                      alt=""
+                      class="h-full w-full object-cover"
+                      width="80"
+                      height="80"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h3 class="process-content-title">
+                      Mobile App Development
+                    </h3>
+                    <p class="process-content-desc">
+                      Native & cross-platform apps tailored to user needs.
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="service-card">
+                <div class="service-card-image">
+                  <img
+                    src="./assets/images/icon-uiux.png"
+                    alt=""
+                    class="h-full w-full object-cover"
+                    width="80"
+                    height="80"
+                  />
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h3 class="process-content-title">UI/UX Design</h3>
+                  <p class="process-content-desc">
+                    Delight users with intuitive and beautiful interfaces
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="grid gap-5 md:grid-cols-3">
+              <article class="service-card">
+                <div class="service-card-image">
+                  <img
+                    src="./assets/images/icon-cloud.png"
+                    alt=""
+                    class="h-full w-full object-cover"
+                    width="80"
+                    height="80"
+                  />
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h3 class="process-content-title">Cloud Solutions</h3>
+                  <p class="process-content-desc">
+                    Secure and flexible cloud infrastructure for your growth.
+                  </p>
+                </div>
+              </article>
+              <article class="service-card">
+                <div class="service-card-image">
+                  <img
+                    src="./assets/images/icon-software.png"
+                    alt=""
+                    class="h-full w-full object-cover"
+                    width="80"
+                    height="80"
+                  />
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h3 class="process-content-title">Software Development</h3>
+                  <p class="process-content-desc">
+                    Custom solutions built around your business logic.
+                  </p>
+                </div>
+              </article>
+              <article class="service-card">
+                <div class="service-card-image">
+                  <img
+                    src="./assets/images/icon-infra.png"
+                    alt=""
+                    class="h-full w-full object-cover"
+                    width="80"
+                    height="80"
+                  />
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h3 class="process-content-title">IT Infrastructure</h3>
+                  <p class="process-content-desc">
+                    Scale your backend with reliable tech foundations.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="grid gap-5 md:grid-cols-3">
+              <article class="service-card">
+                <div class="service-card-image">
+                  <img
+                    src="./assets/images/icon-security.png"
+                    alt=""
+                    class="h-full w-full object-cover"
+                    width="80"
+                    height="80"
+                  />
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h3 class="process-content-title">Cybersecurity Services</h3>
+                  <p class="process-content-desc">
+                    Stay protected with enterprise-grade security.
+                  </p>
+                </div>
+              </article>
+              <article class="service-card">
+                <div class="service-card-image">
+                  <img
+                    src="./assets/images/icon-qa.png"
+                    alt=""
+                    class="h-full w-full object-cover"
+                    width="80"
+                    height="80"
+                  />
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h3 class="process-content-title">QA Solutions</h3>
+                  <p class="process-content-desc">
+                    Ensure performance with rigorous testing frameworks.
+                  </p>
+                </div>
+              </article>
+              <article class="service-card">
+                <div class="service-card-image">
+                  <img
+                    src="./assets/images/icon-consulting.png"
+                    alt=""
+                    class="h-full w-full object-cover"
+                    width="80"
+                    height="80"
+                  />
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h3 class="process-content-title">IT Consulting & Support</h3>
+                  <p class="process-content-desc">
+                    Make smarter tech decisions with expert guidance.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Industries -->
+      <section class="border-t border-divider/30">
+        <div class="section-wrapper">
+          <div
+            class="mb-16 flex flex-col gap-[11px] lg:flex-row lg:items-end lg:justify-between"
+          >
+            <h2 class="section-header-title lg:text-left">
+              Built for Your Industry
+            </h2>
+            <p
+              class="max-w-[331px] text-lg font-medium leading-8 text-muted lg:text-right"
+            >
+              We’ve helped companies across industries launch smarter, faster,
+              and more securely.
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-16 lg:flex-row lg:justify-center lg:gap-16"
+          >
+            <div
+              class="flex flex-col gap-6 lg:w-72"
+              role="tablist"
+              aria-label="Industries"
+            >
+              <button
+                type="button"
+                role="tab"
+                aria-selected="true"
+                data-industry="fintech"
+                class="industry-tab flex items-center gap-2 border-none bg-transparent p-0 text-left"
+              >
+                <span
+                  class="h-8 w-1 rounded-full bg-accent"
+                  aria-hidden="true"
+                ></span>
+                <span class="process-content-title text-text">Fintech</span>
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                data-industry="ecommerce"
+                class="industry-tab flex items-center gap-2 border-none bg-transparent p-0 text-left"
+              >
+                <span
+                  class="h-8 w-1 rounded-full bg-inactive"
+                  aria-hidden="true"
+                ></span>
+                <span class="process-content-title text-inactive"
+                  >E-Commerce</span
+                >
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                data-industry="healthcare"
+                class="industry-tab flex items-center gap-2 border-none bg-transparent p-0 text-left"
+              >
+                <span
+                  class="h-8 w-1 rounded-full bg-inactive"
+                  aria-hidden="true"
+                ></span>
+                <span class="process-content-title text-inactive"
+                  >Healtcare</span
+                >
+              </button>
+            </div>
+            <div class="flex max-w-[840px] flex-1 flex-col gap-5">
+              <p
+                id="industry-desc"
+                class="text-lg font-medium leading-8 text-text"
+              >
+                We build secure, scalable, and compliant fintech solutions —
+                from digital wallets to core banking systems — tailored to
+                modern financial needs.
+              </p>
+              <div class="overflow-hidden rounded-3xl">
+                <img
+                  id="industry-img"
+                  src="./assets/images/industry-fintech-5c5e5d.png"
+                  alt=""
+                  class="h-[351px] w-full object-cover object-center"
+                  width="840"
+                  height="351"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="projects" class="scroll-mt-24 border-t border-divider/30">
+        <div class="section-wrapper">
+          <div class="section-header">
+            <h2 class="section-header-title">
+              From Vision to Launch! Projects We’re Proud Of
+            </h2>
+            <p class="text-lg font-medium leading-8 text-muted">
+              Take a closer look at our recent work powering startups,
+              enterprises, and everything in between.
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-5 md:flex-row md:flex-wrap md:justify-center"
+          >
+            <article
+              class="flex w-full max-w-[373px] flex-col gap-3 md:w-[calc(33.333%-14px)]"
+            >
+              <div class="overflow-hidden rounded-2xl">
+                <img
+                  src="./assets/images/portfolio-1.png"
+                  alt=""
+                  class="aspect-square h-[373px] w-full object-cover"
+                  width="373"
+                  height="373"
+                />
+              </div>
+              <div class="flex flex-col gap-1">
+                <p class="text-base font-medium leading-[30px] text-accent">
+                  Landing Page
+                </p>
+                <h3 class="process-content-title">Portofolio 1</h3>
+              </div>
+            </article>
+            <article
+              class="flex w-full max-w-[373px] flex-col gap-3 md:w-[calc(33.333%-14px)]"
+            >
+              <div class="overflow-hidden rounded-2xl">
+                <img
+                  src="./assets/images/portfolio-2.png"
+                  alt=""
+                  class="aspect-square h-[373px] w-full object-cover"
+                  width="373"
+                  height="373"
+                />
+              </div>
+              <div class="flex flex-col gap-1">
+                <p class="text-base font-medium leading-[30px] text-accent">
+                  Landing Page
+                </p>
+                <h3 class="process-content-title">Portofolio 2</h3>
+              </div>
+            </article>
+            <article
+              class="flex w-full max-w-[373px] flex-col gap-3 md:w-[calc(33.333%-14px)]"
+            >
+              <div class="overflow-hidden rounded-2xl">
+                <img
+                  src="./assets/images/portfolio-3.png"
+                  alt=""
+                  class="aspect-square h-[373px] w-full object-cover"
+                  width="373"
+                  height="373"
+                />
+              </div>
+              <div class="flex flex-col gap-1">
+                <p class="text-base font-medium leading-[30px] text-accent">
+                  Landing Page
+                </p>
+                <h3 class="process-content-title">Portofolio 3</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section
+        id="testimonials"
+        class="scroll-mt-24 border-t border-divider/30 py-20 mx-auto max-w-[1440px] overflow-hidden flex flex-col"
+      >
+        <div class="mx-auto mb-16 max-w-[1440px] px-6 lg:px-35">
+          <div class="flex flex-col gap-[11px] text-center">
+            <h2 class="section-header-title">
+              What Partners Say About Working With Us
+            </h2>
+            <p class="text-lg font-medium leading-8 text-muted">
+              Trusted voices. Real experiences. Proven results.
+            </p>
+          </div>
+        </div>
+        <div
+          class="relative mx-auto w-full min-w-0 max-w-[1440px] px-6 pb-2 lg:px-20"
+        >
+          <!-- Overlays anchored to carousel viewport edges (inside padded area); z-10 above cards -->
+          <div
+            class="hidden md:block pointer-events-none absolute bottom-2 inset-s-20 -top-5 z-10 w-20 bg-gradient-to-r from-page from-[30%] to-transparent sm:w-20 lg:w-32 border-0 border-white"
+            aria-hidden="true"
+            id="testimonials-carousel-overlay-left"
+          ></div>
+          <div
+            id="testimonials-carousel"
+            class="scrollbar-hide relative z-0 flex w-full min-w-0 snap-x snap-mandatory gap-5"
+            tabindex="0"
+            role="region"
+            aria-label="Testimonials. Use arrow keys or swipe to scroll horizontally."
+          >
+            <article
+              class="relative w-[min(594px,calc(100vw-48px))] shrink-0 snap-center rounded-2xl border border-border bg-surface px-6 pb-12 pt-6"
+            >
+              <div class="relative flex flex-col items-center gap-3">
+                <div class="flex gap-1 text-star" aria-label="5 stars">
+                  <svg
+                    class="h-4 w-[17px]"
+                    viewBox="0 0 18 16"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9 0l2.5 5.5L17 6.3l-4 3.9.9 5.8L9 13.9 4.1 16l.9-5.8-4-3.9 5.5-.8z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-4 w-[17px]"
+                    viewBox="0 0 18 16"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9 0l2.5 5.5L17 6.3l-4 3.9.9 5.8L9 13.9 4.1 16l.9-5.8-4-3.9 5.5-.8z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-4 w-[17px]"
+                    viewBox="0 0 18 16"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9 0l2.5 5.5L17 6.3l-4 3.9.9 5.8L9 13.9 4.1 16l.9-5.8-4-3.9 5.5-.8z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-4 w-[17px]"
+                    viewBox="0 0 18 16"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9 0l2.5 5.5L17 6.3l-4 3.9.9 5.8L9 13.9 4.1 16l.9-5.8-4-3.9 5.5-.8z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-4 w-[17px]"
+                    viewBox="0 0 18 16"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9 0l2.5 5.5L17 6.3l-4 3.9.9 5.8L9 13.9 4.1 16l.9-5.8-4-3.9 5.5-.8z"
+                    />
+                  </svg>
+                </div>
+                <p
+                  class="text-center text-lg font-semibold leading-8 text-text"
+                >
+                  “Working with this team was a game-changer for our project.
+                  They understood our vision and turned it into reality
+                  efficiently and effectively.”
+                </p>
+                <div
+                  class="pointer-events-none absolute -top-10 right-2 h-20 w-20 text-white/10 left-0"
+                >
+                  <svg
+                    width="64"
+                    height="47"
+                    viewBox="0 0 64 47"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0H28.3333V25.5L13.3933 46.6667H4.31667L13.2033 26.6667H0V0ZM35 0H63.3333V25.5L48.3933 46.6667H39.3167L48.2033 26.6667H35V0Z"
+                      fill="#FF623E"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="mt-6 flex flex-col gap-1">
+                <p class="text-lg font-semibold leading-8">John Lee</p>
+                <p class="text-lg font-semibold leading-8 text-accent">
+                  Creative Director at Innovate Corp
+                </p>
+              </div>
+              <div
+                class="relative flex w-full border-0 border-white justify-center -bottom-4"
+              >
+                <img
+                  src="./assets/images/avatar-john.png"
+                  alt=""
+                  class="absolute h-18.75 w-18.75 rounded-full object-cover"
+                  width="75"
+                  height="75"
+                />
+              </div>
+            </article>
+
+            <article
+              class="relative w-[min(594px,calc(100vw-48px))] shrink-0 snap-center rounded-2xl bg-surface p-px shadow-none"
+              style="
+                background: linear-gradient(154deg, #ff6c37 0%, #181d27 28%);
+              "
+            >
+              <div class="relative rounded-[15px] bg-surface px-6 pb-12 pt-6">
+                <div class="relative flex flex-col items-center gap-3">
+                  <div class="flex gap-1 text-star" aria-label="5 stars">
+                    <svg
+                      class="h-4 w-[17px]"
+                      viewBox="0 0 18 16"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9 0l2.5 5.5L17 6.3l-4 3.9.9 5.8L9 13.9 4.1 16l.9-5.8-4-3.9 5.5-.8z"
+                      />
+                    </svg>
+                    <svg
+                      class="h-4 w-[17px]"
+                      viewBox="0 0 18 16"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9 0l2.5 5.5L17 6.3l-4 3.9.9 5.8L9 13.9 4.1 16l.9-5.8-4-3.9 5.5-.8z"
+                      />
+                    </svg>
+                    <svg
+                      class="h-4 w-[17px]"
+                      viewBox="0 0 18 16"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9 0l2.5 5.5L17 6.3l-4 3.9.9 5.8L9 13.9 4.1 16l.9-5.8-4-3.9 5.5-.8z"
+                      />
+                    </svg>
+                    <svg
+                      class="h-4 w-[17px]"
+                      viewBox="0 0 18 16"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9 0l2.5 5.5L17 6.3l-4 3.9.9 5.8L9 13.9 4.1 16l.9-5.8-4-3.9 5.5-.8z"
+                      />
+                    </svg>
+                    <svg
+                      class="h-4 w-[17px]"
+                      viewBox="0 0 18 16"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9 0l2.5 5.5L17 6.3l-4 3.9.9 5.8L9 13.9 4.1 16l.9-5.8-4-3.9 5.5-.8z"
+                      />
+                    </svg>
+                  </div>
+                  <p
+                    class="text-center text-lg font-semibold leading-8 text-text"
+                  >
+                    “The team delivered exactly what we needed — on time and
+                    with outstanding quality. Their attention to detail and
+                    communication were top-notch.”
+                  </p>
+                  <div
+                    class="pointer-events-none absolute -top-10 right-2 h-20 w-20 text-white/10 left-0"
+                  >
+                    <svg
+                      width="64"
+                      height="47"
+                      viewBox="0 0 64 47"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0H28.3333V25.5L13.3933 46.6667H4.31667L13.2033 26.6667H0V0ZM35 0H63.3333V25.5L48.3933 46.6667H39.3167L48.2033 26.6667H35V0Z"
+                        fill="#FF623E"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="mt-6 flex flex-col gap-1">
+                  <p class="text-lg font-semibold leading-8">Sarah Tan</p>
+                  <p class="text-lg font-semibold leading-8 text-accent">
+                    Product Manager at Finovate
+                  </p>
+                </div>
+                <div
+                  class="relative flex w-full border-0 border-white justify-center -bottom-4"
+                >
+                  <img
+                    src="./assets/images/avatar-sarah.png"
+                    alt=""
+                    class="absolute h-18.75 w-18.75 rounded-full object-cover"
+                    width="75"
+                    height="75"
+                  />
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="relative w-[min(594px,calc(100vw-48px))] shrink-0 snap-center rounded-2xl border border-border bg-surface px-6 pb-12 pt-6"
+            >
+              <div class="relative flex flex-col items-center gap-3">
+                <div class="flex gap-1 text-star" aria-label="5 stars">
+                  <svg
+                    class="h-4 w-[17px]"
+                    viewBox="0 0 18 16"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9 0l2.5 5.5L17 6.3l-4 3.9.9 5.8L9 13.9 4.1 16l.9-5.8-4-3.9 5.5-.8z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-4 w-[17px]"
+                    viewBox="0 0 18 16"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9 0l2.5 5.5L17 6.3l-4 3.9.9 5.8L9 13.9 4.1 16l.9-5.8-4-3.9 5.5-.8z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-4 w-[17px]"
+                    viewBox="0 0 18 16"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9 0l2.5 5.5L17 6.3l-4 3.9.9 5.8L9 13.9 4.1 16l.9-5.8-4-3.9 5.5-.8z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-4 w-[17px]"
+                    viewBox="0 0 18 16"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9 0l2.5 5.5L17 6.3l-4 3.9.9 5.8L9 13.9 4.1 16l.9-5.8-4-3.9 5.5-.8z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-4 w-[17px]"
+                    viewBox="0 0 18 16"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9 0l2.5 5.5L17 6.3l-4 3.9.9 5.8L9 13.9 4.1 16l.9-5.8-4-3.9 5.5-.8z"
+                    />
+                  </svg>
+                </div>
+                <p
+                  class="text-center text-lg font-semibold leading-8 text-text"
+                >
+                  “The collaboration was seamless, and the results surpassed our
+                  expectations. Their expertise transformed our ideas into a
+                  successful product.”
+                </p>
+                <div
+                  class="pointer-events-none absolute -top-10 right-2 h-20 w-20 text-white/10 left-0"
+                >
+                  <svg
+                    width="64"
+                    height="47"
+                    viewBox="0 0 64 47"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0H28.3333V25.5L13.3933 46.6667H4.31667L13.2033 26.6667H0V0ZM35 0H63.3333V25.5L48.3933 46.6667H39.3167L48.2033 26.6667H35V0Z"
+                      fill="#FF623E"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="mt-6 flex flex-col gap-1">
+                <p class="text-lg font-semibold leading-8">Emily Chen</p>
+                <p class="text-lg font-semibold leading-8 text-accent">
+                  Marketing Head at Tech Solutions
+                </p>
+              </div>
+              <div
+                class="relative flex w-full border-0 border-white justify-center -bottom-4"
+              >
+                <img
+                  src="./assets/images/avatar-emily.png"
+                  alt=""
+                  class="absolute h-18.75 w-18.75 rounded-full object-cover"
+                  width="75"
+                  height="75"
+                />
+              </div>
+            </article>
+          </div>
+          <div
+            class="hidden md:block pointer-events-none absolute -top-5 bottom-2 right-0 z-10 w-20 lg:w-32 bg-gradient-to-l from-page from-30% to-transparent border-0 border-white"
+            aria-hidden="true"
+            id="testimonials-carousel-overlay-right"
+          ></div>
+        </div>
+        <div class="mt-10 flex justify-center gap-1.5">
+          <span class="h-3 w-3 rounded-full bg-accent"></span>
+          <span class="h-3 w-3 rounded-full bg-divider"></span>
+          <span class="h-3 w-3 rounded-full bg-divider"></span>
+        </div>
+      </section>
+
+      <!-- FAQ + CTA -->
+      <section id="faq" class="scroll-mt-24 border-t border-divider/30">
+        <div class="mx-auto max-w-[1440px] px-6 py-20 lg:px-35">
+          <div
+            class="mb-14 flex flex-col justify-between gap-6 lg:flex-row lg:items-end"
+          >
+            <h2 class="max-w-xl section-header-big">Need Help? Start Here.</h2>
+            <p
+              class="max-w-61.25 text-lg font-medium leading-8 text-muted lg:text-right"
+            >
+              Everything you need to know — all in one place.
+            </p>
+          </div>
+          <hr class="border-divider" />
+          <div class="mt-14 flex flex-col gap-16 lg:flex-row lg:gap-18.25">
+            <div class="flex-1 space-y-6">
+              <details class="faq-item group qna-detail" open>
+                <summary class="qna-summary">
+                  <span class="text-2xl font-bold leading-9"
+                    >What services do you offer?</span
+                  >
+                  <span
+                    class="faq-icon-minus qna-symbol-minus"
+                    aria-hidden="true"
+                    >−</span
+                  >
+                  <span class="faq-icon-plus qna-symbol-plus" aria-hidden="true"
+                    >+</span
+                  >
+                </summary>
+                <p class="mt-4 text-xl font-medium leading-8.5 text-muted">
+                  We provide custom web/app development, cloud solutions, UX/UI
+                  design, and more.
+                </p>
+              </details>
+              <details class="faq-item group qna-detail">
+                <summary class="qna-summary">
+                  <span class="text-2xl font-bold leading-9"
+                    >How do I know if this is right for my business?</span
+                  >
+                  <span
+                    class="faq-icon-minus qna-symbol-minus"
+                    aria-hidden="true"
+                    >−</span
+                  >
+                  <span class="faq-icon-plus qna-symbol-plus" aria-hidden="true"
+                    >+</span
+                  >
+                </summary>
+                <p class="mt-4 text-xl font-medium leading-8.5 text-muted">
+                  Book a consultation — we’ll assess fit and recommend a
+                  practical starting point.
+                </p>
+              </details>
+              <details class="faq-item group qna-detail">
+                <summary class="qna-summary">
+                  <span class="text-2xl font-bold leading-9"
+                    >How much does a project cost?</span
+                  >
+                  <span
+                    class="faq-icon-minus qna-symbol-minus"
+                    aria-hidden="true"
+                    >−</span
+                  >
+                  <span class="faq-icon-plus qna-symbol-plus" aria-hidden="true"
+                    >+</span
+                  >
+                </summary>
+                <p class="mt-4 text-xl font-medium leading-8.5 text-muted">
+                  Pricing depends on scope and timeline — we’ll share a clear
+                  estimate after discovery.
+                </p>
+              </details>
+              <details class="faq-item group qna-detail">
+                <summary class="qna-summary">
+                  <span class="text-2xl font-bold leading-9"
+                    >How long does it take?</span
+                  >
+                  <span
+                    class="faq-icon-minus qna-symbol-minus"
+                    aria-hidden="true"
+                    >−</span
+                  >
+                  <span class="faq-icon-plus qna-symbol-plus" aria-hidden="true"
+                    >+</span
+                  >
+                </summary>
+                <p class="mt-4 text-xl font-medium leading-8.5 text-muted">
+                  Typical engagements range from weeks to months; we align
+                  milestones to your launch goals.
+                </p>
+              </details>
+              <details class="faq-item group qna-detail">
+                <summary class="qna-summary">
+                  <span class="text-2xl font-bold leading-9"
+                    >Can I start with a small project first?</span
+                  >
+                  <span
+                    class="faq-icon-minus qna-symbol-minus"
+                    aria-hidden="true"
+                    >−</span
+                  >
+                  <span class="faq-icon-plus qna-symbol-plus" aria-hidden="true"
+                    >+</span
+                  >
+                </summary>
+                <p class="mt-4 text-xl font-medium leading-8.5 text-muted">
+                  Yes — many partners begin with a focused pilot before scaling
+                  the engagement.
+                </p>
+              </details>
+            </div>
+            <aside
+              class="w-full shrink-0 rounded-3xl bg-consultation p-6 lg:w-82.25"
+            >
+              <div class="flex flex-col gap-1">
+                <h3
+                  class="text-[36px] font-bold leading-11 tracking-[-0.02em] text-white"
+                >
+                  Let’s talk it through
+                </h3>
+                <p class="text-lg font-semibold leading-8 text-white">
+                  book a free consultation with our team.
+                </p>
+              </div>
+              <div class="mt-6 overflow-hidden rounded-2xl">
+                <img
+                  src="./assets/images/consultation.png"
+                  alt=""
+                  class="h-38.25 w-full object-cover"
+                  width="329"
+                  height="153"
+                />
+              </div>
+              <a
+                href="#contact"
+                class="mt-6 flex h-12 w-full items-center justify-center rounded-full bg-white text-base font-bold tracking-[-0.02em] text-black shadow-[inset_4px_4px_4px_rgba(255,255,255,0.25)]"
+                >Free Consultation</a
+              >
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="scroll-mt-24 border-t border-divider/30">
+        <div
+          class="mx-auto flex max-w-[1440px] flex-col items-center px-6 py-20 lg:px-35"
+        >
+          <div class="flex w-full max-w-180 flex-col gap-12">
+            <div class="flex flex-col gap-4 text-center">
+              <h2 class="section-header-big">Ready to Start? Let’s Talk.</h2>
+              <p class="text-lg font-medium leading-8 text-muted">
+                Tell us what you need, and we’ll get back to you soon.
+              </p>
+            </div>
+            <form class="flex flex-col gap-10" action="#" method="post">
+              <div class="flex flex-col gap-5">
+                <label class="flex flex-col gap-1.5">
+                  <span class="text-sm font-bold leading-7 text-text"
+                    >Name</span
+                  >
+                  <input
+                    type="text"
+                    placeholder="Enter your name"
+                    class="h-12 rounded-xl border border-divider bg-transparent px-4 text-base font-medium text-text placeholder:text-placeholder"
+                  />
+                </label>
+                <label class="flex flex-col gap-1.5">
+                  <span class="text-sm font-bold leading-7 text-text"
+                    >Email</span
+                  >
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    class="h-12 rounded-xl border border-divider bg-transparent px-4 text-base font-medium text-text placeholder:text-placeholder"
+                  />
+                </label>
+                <label class="flex flex-col gap-1.5">
+                  <span class="text-sm font-bold leading-7 text-text"
+                    >Message</span
+                  >
+                  <textarea
+                    rows="4"
+                    placeholder="Enter your message"
+                    class="rounded-xl border border-divider bg-transparent px-4 py-2 text-base font-medium text-text placeholder:text-placeholder"
+                  ></textarea>
+                </label>
+                <fieldset class="flex flex-col gap-3.5 border-none p-0">
+                  <legend class="text-sm font-bold leading-7 text-text">
+                    Services
+                  </legend>
+                  <div class="flex flex-col gap-9 lg:flex-row lg:gap-9.25">
+                    <div class="flex flex-col gap-4 lg:w-[232px]">
+                      <label class="flex items-center gap-3">
+                        <span
+                          class="flex h-5 w-5 items-center justify-center rounded-md bg-accent"
+                        >
+                          <svg
+                            width="12"
+                            height="10"
+                            viewBox="0 0 12 10"
+                            fill="none"
+                            aria-hidden="true"
+                          >
+                            <path
+                              d="M1 5l3 3 7-7"
+                              stroke="white"
+                              stroke-width="2"
+                            />
+                          </svg>
+                        </span>
+                        <span class="text-base font-medium leading-[30px]"
+                          >Web Development</span
+                        >
+                      </label>
+                      <label class="flex items-center gap-3">
+                        <span
+                          class="flex h-5 w-5 rounded-md border border-divider"
+                        ></span>
+                        <span class="text-base font-medium leading-[30px]"
+                          >Mobile App Development</span
+                        >
+                      </label>
+                      <label class="flex items-center gap-3">
+                        <span
+                          class="flex h-5 w-5 rounded-md border border-divider"
+                        ></span>
+                        <span class="text-base font-medium leading-[30px]"
+                          >UI/UX Design</span
+                        >
+                      </label>
+                    </div>
+                    <div class="flex flex-col gap-4 lg:w-[213px]">
+                      <label class="flex items-center gap-3">
+                        <span
+                          class="flex h-5 w-5 rounded-md border border-divider"
+                        ></span>
+                        <span class="text-base font-medium leading-[30px]"
+                          >Cloud Solutions</span
+                        >
+                      </label>
+                      <label class="flex items-center gap-3">
+                        <span
+                          class="flex h-5 w-5 rounded-md border border-divider"
+                        ></span>
+                        <span class="text-base font-medium leading-[30px]"
+                          >Software Development</span
+                        >
+                      </label>
+                      <label class="flex items-center gap-3">
+                        <span
+                          class="flex h-5 w-5 rounded-md border border-divider"
+                        ></span>
+                        <span class="text-base font-medium leading-[30px]"
+                          >Other</span
+                        >
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <button
+                type="submit"
+                class="flex h-12 w-full items-center justify-center rounded-full bg-accent text-base font-bold tracking-[-0.02em] text-white shadow-[inset_4px_4px_4px_rgba(255,255,255,0.25)]"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="border-t border-divider/30 px-6 pb-16 pt-10 lg:px-[140px]">
+        <div
+          class="mx-auto max-w-[1440px] rounded-3xl border border-divider bg-surface p-10"
+        >
+          <div
+            class="flex flex-col justify-between gap-8 lg:flex-row lg:items-start"
+          >
+            <h2
+              class="max-w-[281px] text-[36px] font-bold uppercase leading-[44px] tracking-[-0.02em] text-text"
+            >
+              LET'S DISCUSS YOUR IDEAS
+            </h2>
+            <div class="flex items-center gap-2">
+              <span
+                class="flex h-8 w-7.5 shrink-0 items-center justify-center text-accent"
+                aria-hidden="true"
+              >
+                <img
+                  src="assets/logos/logo.svg"
+                  alt="company logo"
+                  class="h-full w-full object-cover"
+                  width="80"
+                  height="80"
+                />
+              </span>
+              <span
+                class="font-logo text-2xl font-semibold leading-9 text-white"
+                >Your Logo</span
+              >
+            </div>
+          </div>
+          <hr class="my-10 border-divider" />
+          <div
+            class="flex flex-col justify-between gap-8 lg:flex-row lg:items-center"
+          >
+            <nav class="flex flex-wrap gap-2" aria-label="Footer">
+              <a
+                class="rounded-full px-4 py-2 text-base font-medium text-text hover:bg-white/5"
+                href="#about"
+                >About</a
+              >
+              <a
+                class="rounded-full px-4 py-2 text-base font-medium text-text hover:bg-white/5"
+                href="#services"
+                >Service</a
+              >
+              <a
+                class="rounded-full px-4 py-2 text-base font-medium text-text hover:bg-white/5"
+                href="#projects"
+                >Projects</a
+              >
+              <a
+                class="rounded-full px-4 py-2 text-base font-medium text-text hover:bg-white/5"
+                href="#testimonials"
+                >Testimonials</a
+              >
+              <a
+                class="rounded-full px-4 py-2 text-base font-medium text-text hover:bg-white/5"
+                href="#faq"
+                >FAQ</a
+              >
+            </nav>
+            <div class="flex gap-4">
+              <a
+                href="#"
+                class="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-text hover:bg-white/10"
+                aria-label="Facebook"
+              >
+                <svg class="h-5 w-3" viewBox="0 0 11 20" fill="currentColor">
+                  <path
+                    d="M7 20V11h3l1-4H7V5c0-1 .8-2 2-2h2V0H8C4 0 3 2 3 5v2H0v4h3v9h4z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-text hover:bg-white/10"
+                aria-label="Instagram"
+              >
+                <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M10 5a5 5 0 100 10 5 5 0 000-10zm0 8a3 3 0 110-6 3 3 0 010 6zm5.5-8.5a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-text hover:bg-white/10"
+                aria-label="LinkedIn"
+              >
+                <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M4 3a2 2 0 100 4 2 2 0 000-4zM2 18h4V8H2v10zm7 0h4v-5.5c0-1.5.6-2.5 2-2.5 1.2 0 1.8.9 1.8 2.5V18h4v-6c0-3.5-1.8-5-4.2-5-2 0-3 1-3.5 2h-.1V8H9v10z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-text hover:bg-white/10"
+                aria-label="TikTok"
+              >
+                <svg class="h-5 w-4" viewBox="0 0 17 20" fill="currentColor">
+                  <path
+                    d="M12 2v12a4 4 0 11-4-4h2V8a6 6 0 006 6V10a8 8 0 01-4 1.2V2h2z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      const industryData = {
+        fintech: {
+          desc: 'We build secure, scalable, and compliant fintech solutions — from digital wallets to core banking systems — tailored to modern financial needs.',
+          img: './assets/images/industry-fintech-5c5e5d.png',
+        },
+        ecommerce: {
+          desc: 'We help retailers launch fast storefronts, streamline checkout, and integrate logistics — optimized for conversion and peak traffic.',
+          img: './assets/images/portfolio-2.png',
+        },
+        healthcare: {
+          desc: 'We design HIPAA-aware platforms and patient-first experiences — from scheduling to telehealth — with reliability providers can trust.',
+          img: './assets/images/portfolio-3.png',
+        },
+      };
+
+      document.querySelectorAll('.industry-tab').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const key = btn.getAttribute('data-industry');
+          const data = industryData[key];
+          if (!data) return;
+          document.querySelectorAll('.industry-tab').forEach((b) => {
+            const bar = b.querySelector('span:first-child');
+            const label = b.querySelector('span:last-child');
+            const active = b === btn;
+            b.setAttribute('aria-selected', active);
+            bar.classList.toggle('bg-accent', active);
+            bar.classList.toggle('bg-inactive', !active);
+            label.classList.toggle('text-text', active);
+            label.classList.toggle('text-inactive', !active);
+          });
+          document.getElementById('industry-desc').textContent = data.desc;
+          const img = document.getElementById('industry-img');
+          img.src = data.img;
+        });
+      });
+
+      document.querySelectorAll('.faq-item').forEach((item) => {
+        item.addEventListener('toggle', () => {
+          document.querySelectorAll('.faq-item').forEach((other) => {
+            if (other !== item && item.open) other.removeAttribute('open');
+          });
+        });
+      });
+
+      const track = document.querySelector('.trusted-track');
+      if (track) {
+        track.innerHTML += track.innerHTML;
+      }
+
+      const carousel = document.getElementById('testimonials-carousel');
+      if (carousel) {
+        const scrollStep = () => Math.min(400, carousel.clientWidth * 0.85);
+
+        carousel.addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowRight') {
+            carousel.scrollBy({ left: scrollStep(), behavior: 'smooth' });
+            e.preventDefault();
+          } else if (e.key === 'ArrowLeft') {
+            carousel.scrollBy({ left: -scrollStep(), behavior: 'smooth' });
+            e.preventDefault();
+          }
+        });
+
+        carousel.addEventListener(
+          'wheel',
+          (e) => {
+            const max = carousel.scrollWidth - carousel.clientWidth;
+            if (max <= 0) return;
+            if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+            const left = carousel.scrollLeft;
+            const delta = e.deltaY;
+            if (delta > 0 && left >= max - 1) return;
+            if (delta < 0 && left <= 0) return;
+            carousel.scrollLeft = Math.max(0, Math.min(max, left + delta));
+            e.preventDefault();
+          },
+          { passive: false }
+        );
+      }
+    </script>
+
+    <style>
+      .trusted-marquee {
+        mask-image: linear-gradient(
+          90deg,
+          transparent,
+          black 8%,
+          black 92%,
+          transparent
+        );
+      }
+      .trusted-track {
+        animation: trusted-scroll 40s linear infinite;
+      }
+      @keyframes trusted-scroll {
+        to {
+          transform: translateX(-50%);
+        }
+      }
+      details summary::-webkit-details-marker {
+        display: none;
+      }
+    </style>
   </body>
 </html>

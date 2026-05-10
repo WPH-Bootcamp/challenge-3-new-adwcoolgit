@@ -1,1 +1,143 @@
 @import 'tailwindcss';
+
+@theme {
+  --color-page: #000000;
+  --color-surface: #0a0d12;
+  --color-border: #181d27;
+  --color-divider: #252b37;
+  --color-text: #fdfdfd;
+  --color-muted: #a4a7ae;
+  --color-accent: #ff623e;
+  --color-star: #f3b64c;
+  --color-inactive: #535862;
+  --color-consultation: #cc4e32;
+  --color-placeholder: #717680;
+  --font-sans: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
+  --font-logo: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-page font-sans text-text antialiased;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer components {
+  .header {
+    @apply fixed inset-x-0 top-0 z-50 flex h-21 items-center justify-between border-b border-border/60 bg-black/40 px-6  lg:px-35;
+  }
+
+  .section-wrapper {
+    @apply mx-auto max-w-[1440px] px-6 py-20 lg:px-35;
+  }
+
+  .section-header-big {
+    @apply text-[28px] md:text-[40px] font-bold leading-14 tracking-[-0.02em] text-text;
+  }
+
+  .section-header {
+    @apply mb-16 flex flex-col gap-[11px] text-center;
+  }
+
+  .section-header-title {
+    @apply text-[40px] font-bold leading-14 tracking-[-0.02em];
+  }
+
+  .service-card {
+    @apply relative rounded-2xl border border-border bg-surface pt-14 pb-5 px-5;
+  }
+
+  .service-card-image {
+    @apply absolute left-5 top-[-26px] flex h-20 w-20 items-center justify-center overflow-hidden rounded-xl bg-transparent;
+  }
+
+  .faq-item {
+    @apply flex-none;
+  }
+
+  .partner-logo {
+    @apply flex relative w-fit h-8.5 object-contain mix-blend-luminosity md:object-contain md:h-full;
+  }
+
+  .group {
+    @apply flex-none;
+  }
+
+  .qna-summary {
+    @apply flex cursor-pointer list-none items-center justify-between gap-4;
+  }
+
+  .qna-detail {
+    @apply border-b border-divider pb-6;
+  }
+
+  .qna-title {
+    @apply text-2xl font-bold leading-9;
+  }
+
+  .qna-symbol-minus {
+    @apply hidden h-6 w-6 shrink-0 items-center justify-center group-open:flex;
+  }
+
+  .qna-symbol-plus {
+    @apply flex h-6 w-6 shrink-0 items-center justify-center group-open:hidden;
+  }
+
+  .QnA-content {
+    @apply mt-4 text-xl font-medium leading-8.5 text-muted;
+  }
+
+  .delivered-solution {
+    @apply flex flex-col gap-1.5 rounded-full w-[clamp(172.5px,19.09vw,275px)] h-[clamp(172.5px,19.09vw,275px)] border border-border bg-surface px-4 py-4 text-center justify-center;
+  }
+
+  .delivered-solution-value {
+    @apply md:text-5xl font-bold leading-15 tracking-[-0.02em] text-accent text-4xl;
+  }
+
+  .delivered-solution-desc {
+    @apply md:text-xl font-semibold leading-8.5 text-text text-[14px];
+  }
+
+  .li-process-content {
+    @apply grid col-span-2 items-center gap-6 lg:grid-cols-[1fr_3rem_1fr] lg:gap-x-8 lg:py-10;
+  }
+
+  .process-content-wrapper {
+    @apply order-2 flex justify-center lg:order-1 lg:justify-end;
+  }
+
+  .process-content-box {
+    @apply flex w-full max-w-md flex-col gap-4 rounded-2xl border border-border bg-surface p-6 lg:flex-row lg:items-center lg:justify-between;
+  }
+
+  .process-content-title {
+    @apply text-xl font-bold leading-8.5;
+  }
+
+  .process-content-desc {
+    @apply text-base font-medium leading-7.5 text-muted;
+  }
+
+  .process-number-wrapper {
+    @apply relative z-1 order-1 flex justify-center lg:order-2 lg:self-center;
+  }
+
+  .process-number {
+    @apply flex h-12 w-12 items-center justify-center rounded-full bg-accent text-base font-bold text-white ring-4 ring-page;
+  }
+}
